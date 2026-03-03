@@ -419,7 +419,7 @@ void *boomerang_server(struct boomerang_info *info)
     NSMutableSet *dopamineInstalledAppIds = [NSMutableSet new];
     NSMutableSet *userInstalledAppIds = [NSMutableSet new];
     
-    NSString *dopamineAppsPath = JBROOT_PATH(@"/Applications");
+    NSString *dopamineAppsPath = JBROOT_PATH(@"/App");
     NSString *userAppsPath = @"/var/containers/Bundle/Application";
     
     for (NSString *dopamineAppName in [[NSFileManager defaultManager] contentsOfDirectoryAtPath:dopamineAppsPath error:nil]) {
